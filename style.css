@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+#nav-img {
+    height: 100px;
+    width: 100x;
+    margin-left: 8%;
+}
+#menu-item {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 25px;
+    margin: 7px;
+} 
+
+.lists{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+} 
+.lists:hover{
+    color: red;
+}
+.name{
+    color: orange;
+}
+
+.name:hover{
+    color: rgb(5, 68, 194);
+}
+.title{
+    margin-top:10%;
+    margin-left: 8%;
+}
+.title-h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.download{
+    background-color: black;
+    color: white;
+    margin: 40px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left:50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom 1s,left 1s;
+}
+
+.images:hover #shape{
+    bottom: 15%;
+}
+
+.images:hover #girl{
+left: 40%;
+}
+#about{
+    margin: 27% 8% 0px 8%;
+}
+.about-heading{
+    text-align: center;
+}
+.about-h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+.intro{
+    font-size: 20px;
+    color:rgb(3, 138, 3);
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 5%;
+    gap: 2rem;
+}
+.about-img img{
+    width: 80%;
+}
+.about-details{
+    font-size: 18px;
+    text-align: justify;
+}
+.information{
+    margin-top: 20px;
+}
+.each-info{
+    margin-top: 20px;
+}
+.info-span{
+    /* margin-left: 10px; */
+    padding-left: 10px;
+}
+
+#skills{
+    margin: 5% 8% 0px 8%;
+}
+.skill-heading{
+    text-align: center;
+}
+.skills-h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+.skills-intro{
+    font-size: 20px;
+    color:rgb(3, 138, 3);
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    gap: 2rem;
+}
+.progress-bar{
+    margin-left: 70px;
+    padding-left: 40px;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.orange-bar{
+    background-color: orange;
+    width: 95%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+.skill-img{
+    margin-left: 70px;
+}
+.skill-img img{
+    width: 80%;
+}
+
+.contact-heading{
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-h4{
+
+    color: green;
+}
+.contact-icons{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    
+}
+.each-icon{
+    margin-left: 25px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.each-icon:hover{
+background-image: linear-gradient(to bottom right, yellow,red);
+border-radius: 50%;
+
+
+}
+
+.each-icon:hover i{
+    color: white;
+    animation-name: shake 0.75s;
+    
+}
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform:rotate(-15deg);}
+    
+}
+.bottom-footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.uparrow{
+    height: 50px;
+    width: 50px;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+    border-radius: 100%;
+}
+.uparrow i{
+    margin-left: 15px;
+    margin-top: 12px;
+    font-size: 25px;
+}
